@@ -1,0 +1,115 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 200vh;
+    }
+    #main{
+        background: linear-gradient(90deg, rgb(0 29 80) 0%, rgb(0, 64, 146) 53%);
+        height: 51.6vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardBody{
+        display: flex;
+        flex-direction: column;
+        height: 45vh;
+        width: 30vh;
+        /* background-color: red; */
+        
+    }
+    .cardProfile{
+        height: 310px;
+        width: 340px;
+        background-color: rgb(53, 56, 250);
+    }
+    .cardContent{
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        height: 210px;
+        width: 340px;
+        border-radius: 0px 0px 5px 5px;
+        /*border-left: 2px solid black;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black; */
+        
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    .cardContent>h3{
+        font-size: 2rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .cardContent>p{
+        font-size: 0.88rem;
+        font-weight: 550;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .cardContent>.links{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* background: linear-gradient(90deg, rgba(160,254,255,1) 0%, rgba(8,208,187,1) 53%); */
+        background: linear-gradient(90deg, rgb(0 29 80) 0%, rgb(0, 64, 146) 53%);
+        padding: 8px 0;
+        height: 60px;
+        box-shadow: rgb(0 29 80) 0px 30px 60px -12px inset, rgb(0, 64, 146) 0px 18px 36px -18px inset;
+    }
+    .cardContent>.links>.p-icons{
+        background-color: rgba(255, 255, 255, 0.384);
+        backface-visibility: 10px;
+        backdrop-filter: blur(15px);
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+    
+    .cardContent>.links>.p-icons>h6>a{
+        text-decoration: none;
+        color:white;
+        font: 600;
+    } 
+    .cardContent>.links>.git,.TWT,.FB{
+        overflow: visible;
+        padding: 5px;
+        transition: transform 1.5s ease-in-out;
+        border-radius: 25%;
+    }
+    .cardContent>.links>.git:hover,.TWT:hover,.FB:hover{
+        transform: translateY(10px);
+        background-color: rgba(236, 236, 236, 0.705);
+        z-index: 0;
+        border-radius: 25%;
+        /* height: 5px; */
+
+    }
+
+    .info{
+        padding: 8px 5px;
+        display: flex;
+        justify-content: flex-end;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .cardBtn{
+        width: 120px;
+        border-radius: 25px;
+        height: 50px;
+        width: 130px;
+        /* padding: 10px; */
+        background-color: transparent;
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+    }
+     .cardBtn:active{
+        transform: translateY(10px);
+    border: 2px solid rgb(93, 169, 255);
+        background-color:  rgb(0, 64, 146);
+       
+    }
